@@ -50,10 +50,11 @@ with st.sidebar:
     new_chat=st.button("New Chat")
     if new_chat:
         reset_chat()
-    st.header("Select chat ")
+    st.header("My Conversations ")  
     for thread in st.session_state['thread_chats']:
-        st.session_state['thread_id']=thread
+        
         if st.button(str(thread)):
+            st.session_state['thread_id']=thread
             messages=load_conversation(thread)
 
             temp_messages=[]
