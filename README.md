@@ -25,12 +25,26 @@ Whether you return after hours or days, your previous chats remain right where y
 - ✅ Extendable backend – can integrate with LLMs (e.g., OpenAI, Hugging Face)
 
 ### Steps To use
-- clone the repo
+
 - cd your-repo
+- clone the repo
 ```
-git clone https://github.com/Abhishek3689/your-repo.git
+git clone https://github.com/Abhishek3689/Chat_bot_Langgraph.git
 ```
 - create virtual env
- python -m venv venv
-  
-conda activate venv # On Windows: venv\Scripts\activate
+ ```
+python -m venv venv
+```
+- activate environment
+```
+source venv/bin/activate
+```
+or On Windows: venv\Scripts\activate
+- install dependencies
+```
+pip install -r requirements.txt
+```
+- Run
+```
+python datasase_frontend.py
+```
