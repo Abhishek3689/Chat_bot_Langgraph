@@ -1,39 +1,15 @@
-pandas
-numpy
 
 ## Langchain and Related Libraries
 langchain
 langgraph
 langchain-core
 langchain-groq
-langchain-community
-langchain-huggingface
 
 # Environment Variable Management
 python-dotenv
 
-## Deepllearning Frameworks
-torch
-tensorflow
-
-# Hugging Face Integration
-
-transformers
-huggingface-hub
-sentencepiece
-
-bitsandbytes
-accelerate
-
 ## Database Connectors
-pymysql
-mysql-connector-python
-
-
-## Evalutaion Libraries
-evaluate
-ragas 
-
+langgraph-checkpoint-sqlite
 
 ## UI Interface
 streamlit
