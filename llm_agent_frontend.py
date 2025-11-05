@@ -1,4 +1,4 @@
-from database_integration_backend import chatbot,get_all_threads
+from llm_agent_backend import chatbot,get_all_threads
 from langchain_core.messages import HumanMessage,AIMessage
 import streamlit as st
 import uuid
@@ -90,10 +90,11 @@ if user_input:
     ## AI Response
     ai_msg=[]
     with st.chat_message("assistant"):
-        ai_msg=[]
-        for msg_chunk,metadata in chatbot.stream(initial_state,config=config,stream_mode='messages'):
-            ai_msg.append(msg_chunk.content)
-        st.write_stream(ai_msg)
+        def ai_stream():
+            for msg_chunks,metadata in chatbot.stream(initial_state,config=config,stream_mode='messages'):
+                if isinstance(msg_chunks,AIMessage):
+                    yield msg_chunks.content
                 
+        ai_msg=st.write_stream(ai_stream()) 
         st.session_state['chat_history'].append({'role':'assistant','content':' '.join(ai_msg)})
 
