@@ -1,5 +1,5 @@
-## 💬 LANGGRAPH Chatbot – Persistent Multi-Conversation AI
-### 🧠 An intelligent, memory-based chatbot built with Streamlit and SQLite
+## 💬 LANGGRAPH Chatbot – Persistent Multi-Conversation AI+ Intelligent Agents
+### 🧠 A memory-based AI chatbot powered by LangGraph, Streamlit, SQLite, and Agents
 <img width="1350" height="567" alt="image" src="https://github.com/user-attachments/assets/4b29c89d-ab43-472e-9f23-93d20ee01c8c" />
 🚀 Overview
 
@@ -9,6 +9,13 @@
 All chat history is securely stored in a SQLite database, allowing:
 
 🗂️ Multiple independent chat sessions
+
+🤖 Integrated Agent System – The chatbot now leverages LangGraph Agents, allowing dynamic reasoning and tool usage:
+
+- Web search or knowledge retrieval
+- Weather Data
+- Calculator or data-based reasoning
+- Context-aware query handling
 
 💾 Persistent memory across sessions and restarts
 
